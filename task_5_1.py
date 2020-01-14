@@ -21,7 +21,10 @@ $ python task_5_1.py
 То есть эту задачу можно решить без использования условия if.
 '''
 name = input('Введите имя устройства: ')
-parameter = input('Введите параметр: ')
+#parameter = input('Введите параметр '+sorted(london_co['{}'.format(name)])+': ' )
+#sorted(london_co['{}'.format(name)])
+#print(sorted(london_co['{}'.format(name)]))
+
 
 
 
@@ -50,5 +53,14 @@ london_co = {
         'routing': True
     }
 }
-print(sorted(london_co['{}'.format(name)]))
+list = sorted(london_co['{}'.format(name)])
+str1 = str(list)
+
+#type("list")
+
+#print(str1)
+
+#print(sorted(london_co['{}'.format(name)]))
+parameter = input('Введите параметр '+str1+' : ')
+#print(sorted(london_co['{}'.format(name)]))
 print(london_co['{}'.format(name)]['{}'.format(parameter)])
