@@ -62,5 +62,10 @@ str1 = str(list)
 
 #print(sorted(london_co['{}'.format(name)]))
 parameter = input('Введите параметр '+str1+' : ')
+dictionary = london_co['{}'.format(name)]
+dic2 = dictionary['{}'.format(parameter)]
 #print(sorted(london_co['{}'.format(name)]))
-print(london_co['{}'.format(name)]['{}'.format(parameter)])
+#print(london_co['{}'.format(name)]['{}'.format(parameter)])
+#print(dictionary.get(['{}'.format(parameter)])
+#param2 = str(parameter)
+print(dic2)
